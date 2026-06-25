@@ -6,6 +6,12 @@ import { ScentFinder } from '@/components/scent-finder'
 import { FragranceJourney } from '@/components/fragrance-journey'
 import { ProductCatalogue } from '@/components/product-catalogue'
 import { SmartAutomation } from '@/components/smart-automation'
+import { Testimonials } from '@/components/testimonials'
+import { FutureVision } from '@/components/future-vision'
+import { LeadCapture } from '@/components/lead-capture'
+import { FAQ } from '@/components/faq'
+import { ContactSection } from '@/components/contact-section'
+import { FinalCTA } from '@/components/final-cta'
 import { Footer } from '@/components/footer'
 
 export default function Home() {
@@ -19,6 +25,12 @@ export default function Home() {
       <FragranceJourney />
       <ProductCatalogue />
       <SmartAutomation />
+      <Testimonials />
+      <FutureVision />
+      <LeadCapture />
+      <FAQ />
+      <ContactSection />
+      <FinalCTA />
       <Footer />
     </main>
   )
