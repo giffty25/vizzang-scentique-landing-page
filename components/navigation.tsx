@@ -45,7 +45,7 @@ export function Navigation() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm tracking-widest font-light text-foreground hover:text-accent transition-colors duration-300"
+                className="text-sm tracking-widest font-light text-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.label}
               </button>
@@ -55,7 +55,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-foreground hover:text-accent transition-colors"
+            className="md:hidden text-foreground hover:text-primary transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}

@@ -4,11 +4,11 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen pt-32 pb-16 flex items-center justify-center bg-gradient-to-br from-cream via-background to-background relative overflow-hidden"
+      className="min-h-screen pt-32 pb-16 flex items-center justify-center bg-background relative overflow-hidden"
     >
       {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/3 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/3 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/2 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8">
@@ -30,7 +30,7 @@ export function Hero() {
           </p>
 
           {/* Featured Quote */}
-          <div className="bg-white/40 backdrop-blur-sm border border-accent/20 rounded-sm p-8 md:p-12 my-8 max-w-3xl mx-auto">
+          <div className="bg-secondary backdrop-blur-sm border border-accent/30 rounded-sm p-8 md:p-12 my-8 max-w-3xl mx-auto">
             <p className="text-lg md:text-2xl font-light italic text-foreground leading-relaxed">
               "We don&apos;t believe fragrance should enter a room before you do. We
               believe it should stay long after you&apos;ve left."
@@ -41,14 +41,14 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-base rounded-sm font-light tracking-widest"
+              className="bg-primary text-primary-foreground hover:bg-[#C8A96B] px-8 py-6 text-base rounded-sm font-light tracking-widest"
             >
               Explore Collection
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background px-8 py-6 text-base rounded-sm font-light tracking-widest"
+              className="border-foreground text-foreground hover:bg-secondary hover:text-foreground px-8 py-6 text-base rounded-sm font-light tracking-widest"
             >
               Find My Perfect Scent
             </Button>

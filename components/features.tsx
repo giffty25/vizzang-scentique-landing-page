@@ -37,12 +37,12 @@ export function Features() {
   return (
     <section
       id="features"
-      className="py-24 bg-cream/50"
+      className="py-24 bg-background"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-accent font-light tracking-widest text-sm mb-4">
+          <p className="text-primary font-light tracking-widest text-sm mb-4">
             WHY VIZZANG SCENTIQUE
           </p>
           <h2 className="text-5xl md:text-6xl font-light text-foreground">
