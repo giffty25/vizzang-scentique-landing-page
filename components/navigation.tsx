@@ -26,17 +26,22 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Image
               src="/vizzang-logo.png"
               alt="Vizzang Scentique"
-              width={40}
-              height={40}
+              width={45}
+              height={45}
               className="object-contain"
             />
-            <span className="ml-3 text-xl font-light tracking-widest text-foreground hidden sm:block">
-              VIZZANG
-            </span>
+            <div className="hidden sm:block">
+              <div className="text-base font-bold tracking-widest text-foreground">
+                VIZZANG
+              </div>
+              <div className="text-xs font-light text-primary tracking-wider">
+                SCENTIQUE
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

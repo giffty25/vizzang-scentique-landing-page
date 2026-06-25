@@ -13,14 +13,10 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-foreground">
-            <span className="text-balance">
-              Express Your
-              <br />
-              <span className="text-accent">Essence</span>
-              <br />
-              Through Fragrance
-            </span>
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-foreground text-balance">
+            Express Your<br />
+            <span className="text-accent text-7xl md:text-8xl">Essence</span><br />
+            Through Fragrance
           </h1>
 
           {/* Subheadline */}
@@ -38,20 +34,19 @@ export function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-[#C8A96B] px-8 py-6 text-base rounded-sm font-light tracking-widest"
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-12">
+            <a
+              href="#scent-finder"
+              className="inline-block bg-primary text-primary-foreground hover:bg-accent px-12 py-4 text-lg rounded-sm font-bold tracking-widest transition-all duration-300 hover:scale-105"
             >
               Explore Collection
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-foreground text-foreground hover:bg-secondary hover:text-foreground px-8 py-6 text-base rounded-sm font-light tracking-widest"
+            </a>
+            <a
+              href="#scent-finder"
+              className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-background px-12 py-4 text-lg rounded-sm font-bold tracking-widest transition-all duration-300 hover:scale-105"
             >
               Find My Perfect Scent
-            </Button>
+            </a>
           </div>
 
           {/* Trust Indicators */}

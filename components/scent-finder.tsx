@@ -86,7 +86,7 @@ export function ScentFinder() {
         : 99
 
   return (
-    <section className="bg-background py-16 md:py-24">
+    <section id="scent-finder" className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-light md:text-4xl text-foreground">
