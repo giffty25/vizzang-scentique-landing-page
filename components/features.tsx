@@ -75,33 +75,27 @@ export function Features() {
           })}
         </div>
 
-        {/* Philosophy Section */}
+        {/* Welcome Section */}
         <div className="bg-white border border-border/40 p-12 md:p-16">
           <div className="text-center mb-8">
             <h3 className="text-3xl md:text-4xl font-light text-foreground mb-4">
-              Our Fragrance Philosophy
+              Welcome Home
             </h3>
           </div>
 
-          {/* Philosophy Quote */}
-          <div className="bg-accent/5 border-l-4 border-accent px-8 py-6 mb-8">
-            <p className="text-2xl font-light italic text-foreground">
-              "We don&apos;t believe fragrance should enter a room before you do. We
-              believe it should stay long after you&apos;ve left."
+          {/* Welcome Message */}
+          <div className="space-y-6 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground font-light leading-relaxed">
+              Finding your perfect scent shouldn't feel complicated. We&apos;re here to help you 
+              discover fragrances that feel like an extension of who you are. Whether you&apos;re 
+              looking for your signature scent, something for special occasions, or gifts for people 
+              you care about—we&apos;ve created this space to make the journey personal and effortless.
+            </p>
+            <p className="text-lg text-muted-foreground font-light leading-relaxed">
+              Every fragrance in our collection has been thoughtfully selected with real people in mind. 
+              People with busy lives, sensitive noses, and a love for quality. People just like you.
             </p>
           </div>
-
-          {/* Supporting Text */}
-          <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-3xl mx-auto">
-            At Vizzang Scentique, we curate fragrances that complement your
-            presence rather than compete with it. Every scent is chosen to help you
-            feel confident, express your individuality, and leave a memorable
-            impression. We are passionate about providing elegant, long-lasting
-            fragrances that smell beautiful without being overpowering, making
-            them ideal for everyday wear, professional settings, and
-            fragrance-sensitive individuals. Every product is selected to help
-            customers feel confident, comfortable, and unforgettable.
-          </p>
         </div>
       </div>
     </section>
