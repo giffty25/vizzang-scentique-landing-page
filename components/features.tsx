@@ -1,0 +1,109 @@
+import { Clock, Wind, Droplet, Flower, Sun, Award } from 'lucide-react'
+
+export function Features() {
+  const features = [
+    {
+      icon: Clock,
+      title: 'Long-Lasting Fragrances',
+      description: 'Scents that endure throughout your day without fading.',
+    },
+    {
+      icon: Wind,
+      title: 'Soft Yet Memorable',
+      description: 'Elegantly balanced to enhance without overwhelming.',
+    },
+    {
+      icon: Droplet,
+      title: 'Premium Fragrance Oils',
+      description: 'Carefully curated essences for depth and quality.',
+    },
+    {
+      icon: Flower,
+      title: 'Suitable For Sensitive Noses',
+      description: 'Gentle compositions that respect sensitive sensitivities.',
+    },
+    {
+      icon: Sun,
+      title: 'Perfect For African Weather',
+      description: 'Designed to thrive in warm and humid climates.',
+    },
+    {
+      icon: Award,
+      title: 'Affordable Luxury',
+      description: 'Premium quality without premium price tags.',
+    },
+  ]
+
+  return (
+    <section
+      id="features"
+      className="py-24 bg-cream/50"
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <p className="text-accent font-light tracking-widest text-sm mb-4">
+            WHY VIZZANG SCENTIQUE
+          </p>
+          <h2 className="text-5xl md:text-6xl font-light text-foreground">
+            Premium Features
+          </h2>
+        </div>
+
+        {/* Feature Cards Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {features.map((feature, index) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={index}
+                className="bg-white border border-border/40 p-8 hover:border-accent/40 hover:shadow-lg transition-all duration-300 group"
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 flex items-center justify-center border border-accent/50 group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
+                    <Icon className="w-6 h-6 text-accent" strokeWidth={1.5} />
+                  </div>
+                </div>
+                <h3 className="text-xl font-light text-foreground mb-3 tracking-wide">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Philosophy Section */}
+        <div className="bg-white border border-border/40 p-12 md:p-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-light text-foreground mb-4">
+              Our Fragrance Philosophy
+            </h3>
+          </div>
+
+          {/* Philosophy Quote */}
+          <div className="bg-accent/5 border-l-4 border-accent px-8 py-6 mb-8">
+            <p className="text-2xl font-light italic text-foreground">
+              "We don&apos;t believe fragrance should enter a room before you do. We
+              believe it should stay long after you&apos;ve left."
+            </p>
+          </div>
+
+          {/* Supporting Text */}
+          <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-3xl mx-auto">
+            At Vizzang Scentique, we curate fragrances that complement your
+            presence rather than compete with it. Every scent is chosen to help you
+            feel confident, express your individuality, and leave a memorable
+            impression. We are passionate about providing elegant, long-lasting
+            fragrances that smell beautiful without being overpowering, making
+            them ideal for everyday wear, professional settings, and
+            fragrance-sensitive individuals. Every product is selected to help
+            customers feel confident, comfortable, and unforgettable.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
