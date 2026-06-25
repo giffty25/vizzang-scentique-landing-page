@@ -15,7 +15,7 @@ const products: Product[] = [
     name: 'Signature Perfume',
     category: 'Perfumes',
     description: 'Premium eau de parfum with long-lasting performance',
-    price: '₦8,500',
+    price: '₦120,000',
     image: '/perfume-1.png',
   },
   {
@@ -23,7 +23,7 @@ const products: Product[] = [
     name: 'Perfume Oil Essence',
     category: 'Perfume Oils',
     description: 'Concentrated fragrance oil for intimate wear',
-    price: '₦5,500',
+    price: '₦95,000',
     image: '/perfume-oil.png',
   },
   {
@@ -31,7 +31,7 @@ const products: Product[] = [
     name: 'Body Mist Cloud',
     category: 'Body Mists',
     description: 'Light and refreshing body mist for everyday elegance',
-    price: '₦3,500',
+    price: '₦85,000',
     image: '/body-mist.png',
   },
   {
@@ -39,7 +39,7 @@ const products: Product[] = [
     name: 'Ambiance Candle',
     category: 'Scented Candles',
     description: 'Hand-poured soy candle with luxurious scent throw',
-    price: '₦4,500',
+    price: '₦110,000',
     image: '/scented-candle.png',
   },
   {
@@ -47,7 +47,7 @@ const products: Product[] = [
     name: 'Reed Diffuser Home',
     category: 'Reed Diffusers',
     description: 'Elegant home fragrance with natural rattan diffusers',
-    price: '₦6,000',
+    price: '₦150,000',
     image: '/reed-diffuser.png',
   },
   {
@@ -55,7 +55,7 @@ const products: Product[] = [
     name: 'Drive Aroma',
     category: 'Car Fragrances',
     description: 'Premium car fragrance for luxury journeys',
-    price: '₦2,500',
+    price: '₦35,000',
     image: '/car-fragrance.png',
   },
   {
@@ -63,7 +63,7 @@ const products: Product[] = [
     name: 'Luxury Gift Set',
     category: 'Gift Collections',
     description: 'Curated collection perfect for gifting',
-    price: '₦15,000',
+    price: '₦280,000',
     image: '/gift-collection.png',
   },
 ]

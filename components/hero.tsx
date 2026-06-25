@@ -28,14 +28,14 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Carefully crafted fragrances that let you be yourself. Scents that complement your presence, 
-            not overpower it. Because true elegance whispers, it never shouts.
+            "Your scent is your story. We create the perfect chapter." Each fragrance is carefully crafted 
+            to complement your presence, not overpower it. Because true elegance whispers, it never shouts.
           </p>
 
           {/* Featured Quote */}
           <div className="bg-black backdrop-blur-sm border border-primary/40 rounded-sm p-8 md:p-12 my-8 max-w-3xl mx-auto">
             <p className="text-lg md:text-2xl font-light italic text-white leading-relaxed">
-              "Your scent is your story. We create the perfect chapter."
+              "We don&apos;t believe fragrance should enter a room before you do. We believe it should stay long after you&apos;ve left."
             </p>
           </div>
 
