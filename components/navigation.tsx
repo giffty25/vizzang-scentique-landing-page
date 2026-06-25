@@ -36,10 +36,7 @@ export function Navigation() {
             />
             <div className="hidden sm:block">
               <div className="text-base font-bold tracking-widest text-foreground">
-                VIZZANG
-              </div>
-              <div className="text-xs font-light text-primary tracking-wider">
-                SCENTIQUE
+                Vizzang <span className="text-primary">Scentique</span>
               </div>
             </div>
           </Link>
