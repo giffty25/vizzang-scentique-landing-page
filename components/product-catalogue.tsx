@@ -1,73 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
-interface Product {
-  id: string
-  name: string
-  category: string
-  description: string
-  price: string
-  image: string
-}
-
-const products: Product[] = [
-  {
-    id: 1,
-    name: 'Signature Perfume',
-    category: 'Perfumes',
-    description: 'Premium eau de parfum with long-lasting performance',
-    price: '₦120,000',
-    image: '/perfume-1.png',
-  },
-  {
-    id: 2,
-    name: 'Perfume Oil Essence',
-    category: 'Perfume Oils',
-    description: 'Concentrated fragrance oil for intimate wear',
-    price: '₦95,000',
-    image: '/perfume-oil.png',
-  },
-  {
-    id: 3,
-    name: 'Body Mist Cloud',
-    category: 'Body Mists',
-    description: 'Light and refreshing body mist for everyday elegance',
-    price: '₦85,000',
-    image: '/body-mist.png',
-  },
-  {
-    id: 4,
-    name: 'Ambiance Candle',
-    category: 'Scented Candles',
-    description: 'Hand-poured soy candle with luxurious scent throw',
-    price: '₦110,000',
-    image: '/scented-candle.png',
-  },
-  {
-    id: 5,
-    name: 'Reed Diffuser Home',
-    category: 'Reed Diffusers',
-    description: 'Elegant home fragrance with natural rattan diffusers',
-    price: '₦150,000',
-    image: '/reed-diffuser.png',
-  },
-  {
-    id: 6,
-    name: 'Drive Aroma',
-    category: 'Car Fragrances',
-    description: 'Premium car fragrance for luxury journeys',
-    price: '₦35,000',
-    image: '/car-fragrance.png',
-  },
-  {
-    id: 7,
-    name: 'Luxury Gift Set',
-    category: 'Gift Collections',
-    description: 'Curated collection perfect for gifting',
-    price: '₦280,000',
-    image: '/gift-collection.png',
-  },
-]
+import { allProducts, type Product } from '@/lib/products'
 
 const categories = [
   'All',
@@ -80,10 +13,12 @@ const categories = [
   'Gift Collections',
 ]
 
+const WHATSAPP_NUMBER = '2349035113502'
+
 export function ProductCatalogue() {
   const getWhatsAppLink = (product: Product) => {
-    const message = `I'm interested in ordering ${product.name} (${product.category}) - ${product.price}`
-    return `https://wa.me/2349035113502?text=${encodeURIComponent(message)}`
+    const message = `Hello Vizzang Scentique. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
   }
 
   return (
@@ -113,10 +48,10 @@ export function ProductCatalogue() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
+          {allProducts.map((product) => (
             <div
               key={product.id}
-              className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-lg"
+              className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-xl hover:border-primary"
             >
               {/* Product Image */}
               <div className="relative h-64 w-full overflow-hidden bg-muted">
@@ -126,34 +61,49 @@ export function ProductCatalogue() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                {!product.stock && (
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <p className="text-white font-bold">Pre-order</p>
+                  </div>
+                )}
               </div>
 
               {/* Product Info */}
               <div className="flex flex-1 flex-col p-6">
-                <p className="mb-2 text-xs font-light uppercase tracking-widest text-accent">
+                <p className="mb-2 text-xs font-light uppercase tracking-widest text-primary">
                   {product.category}
                 </p>
-                <h3 className="mb-2 text-lg font-light text-foreground">
+                <h3 className="mb-2 text-lg font-bold text-foreground">
                   {product.name}
                 </h3>
-                <p className="mb-4 flex-1 text-sm text-muted-foreground">
+                <p className="mb-3 flex-1 text-sm text-muted-foreground">
                   {product.description}
                 </p>
 
+                <div className="space-y-2 mb-4 pb-4 border-b border-border">
+                  <div className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-primary">Fragrance:</span> {product.fragranceFamily}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-primary">Size:</span> {product.size}
+                  </div>
+                </div>
+
                 {/* Price and CTA */}
-                <div className="flex items-center justify-between">
-                  <span className="text-xl font-light text-accent">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xl font-bold text-primary">
                     {product.price}
                   </span>
-                  <a
-                    href={getWhatsAppLink(product)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded bg-foreground px-4 py-2 text-sm font-light text-background transition-opacity hover:opacity-80"
-                  >
-                    Order
-                  </a>
                 </div>
+
+                <a
+                  href={getWhatsAppLink(product)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full rounded bg-primary text-black py-2 text-center text-sm font-bold hover:bg-accent transition-colors"
+                >
+                  Order on WhatsApp
+                </a>
               </div>
             </div>
           ))}
