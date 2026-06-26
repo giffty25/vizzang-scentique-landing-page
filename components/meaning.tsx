@@ -1,4 +1,5 @@
 import { Sparkles, Heart, Music, Zap } from 'lucide-react'
+import Image from 'next/image'
 
 export function Meaning() {
   const values = [
@@ -29,21 +30,33 @@ export function Meaning() {
       id="meaning"
       className="py-24 bg-black"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-primary font-light tracking-widest text-sm mb-4">
-            OUR STORY
-          </p>
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            A Brand Built<br />
-            On <span className="text-primary">Connection</span>
-          </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-            Vizzang was born from a simple belief: fragrance is an intimate conversation between 
-            who you are and how the world experiences you. We craft scents for the authentic, the ambitious, 
-            and those who refuse to be ordinary.
-          </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+          {/* Header */}
+          <div className="text-left">
+            <p className="text-primary font-light tracking-widest text-sm mb-4">
+              OUR FRAGRANCE PHILOSOPHY
+            </p>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              More Than<br />
+              <span className="text-primary">A Scent</span>
+            </h2>
+            <p className="text-base lg:text-lg text-gray-300 font-light leading-relaxed">
+              Vizzang was born from a simple belief: fragrance is an intimate conversation between 
+              who you are and how the world experiences you. We craft scents for the authentic, the ambitious, 
+              and those who refuse to be ordinary. Each fragrance tells a story of confidence, elegance, and self-expression.
+            </p>
+          </div>
+
+          {/* Fragrance Philosophy Lifestyle Image */}
+          <div className="relative h-96 lg:h-full lg:min-h-96">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/047c9a89a400eb6cfa59371a89a8d3c6~2-vXV8pzrWkaqKKJfYaBwkqZtFDwGOmV.jpg"
+              alt="Man enjoying luxury fragrance"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
         </div>
 
         {/* Values Grid */}

@@ -1,4 +1,5 @@
 import { Clock, Wind, Droplet, Flower, Sun, Award } from 'lucide-react'
+import Image from 'next/image'
 
 export function Features() {
   const features = [
@@ -75,26 +76,37 @@ export function Features() {
           })}
         </div>
 
-        {/* Welcome Section */}
-        <div className="bg-white border border-border/40 p-12 md:p-16">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl md:text-4xl font-light text-foreground mb-4">
-              Welcome Home
-            </h3>
+        {/* Brand Story Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Brand Story Lifestyle Image */}
+          <div className="relative h-96 lg:h-full lg:min-h-96 order-2 lg:order-1">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aa59f9eb8ea7db0feb8871d214a3de2f-c0GYwtkKx8TXUIURxhFyNGgCsozk9S.jpg"
+              alt="Woman enjoying fragrance confidence"
+              fill
+              className="object-cover rounded-lg"
+            />
           </div>
 
           {/* Welcome Message */}
-          <div className="space-y-6 max-w-3xl mx-auto">
-            <p className="text-lg text-muted-foreground font-light leading-relaxed">
-              Finding your perfect scent shouldn't feel complicated. We&apos;re here to help you 
-              discover fragrances that feel like an extension of who you are. Whether you&apos;re 
-              looking for your signature scent, something for special occasions, or gifts for people 
-              you care about—we&apos;ve created this space to make the journey personal and effortless.
-            </p>
-            <p className="text-lg text-muted-foreground font-light leading-relaxed">
-              Every fragrance in our collection has been thoughtfully selected with real people in mind. 
-              People with busy lives, sensitive noses, and a love for quality. People just like you.
-            </p>
+          <div className="bg-white border border-border/40 p-8 md:p-12 order-1 lg:order-2">
+            <h3 className="text-2xl lg:text-3xl font-light text-foreground mb-6">
+              Everyday Luxury,<br />
+              <span className="text-accent font-bold">Every Day</span>
+            </h3>
+
+            <div className="space-y-4">
+              <p className="text-base lg:text-lg text-muted-foreground font-light leading-relaxed">
+                Finding your perfect scent shouldn't feel complicated. We&apos;re here to help you 
+                discover fragrances that feel like an extension of who you are. Whether you&apos;re 
+                looking for your signature scent, something for special occasions, or gifts for people 
+                you care about—we&apos;ve created this space to make the journey personal and effortless.
+              </p>
+              <p className="text-base lg:text-lg text-muted-foreground font-light leading-relaxed">
+                Every fragrance in our collection has been thoughtfully selected with real people in mind. 
+                People with busy lives, sensitive noses, and a love for quality. People just like you.
+              </p>
+            </div>
           </div>
         </div>
       </div>
