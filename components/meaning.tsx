@@ -51,7 +51,7 @@ export function Meaning() {
           {/* Fragrance Philosophy Lifestyle Image */}
           <div className="relative h-96 lg:h-full lg:min-h-96">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/047c9a89a400eb6cfa59371a89a8d3c6~2-vXV8pzrWkaqKKJfYaBwkqZtFDwGOmV.jpg"
+              src="/lifestyle-man-vizzang-edited.png"
               alt="Man enjoying luxury fragrance"
               fill
               className="object-cover rounded-lg"
