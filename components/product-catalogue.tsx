@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface Product {
   id: string
@@ -86,7 +87,7 @@ export function ProductCatalogue() {
   }
 
   return (
-    <section className="bg-background py-16 md:py-24">
+    <section id="product-catalogue" className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-light md:text-4xl text-foreground">
@@ -100,12 +101,13 @@ export function ProductCatalogue() {
         {/* Category Filter */}
         <div className="mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
           {categories.map((cat) => (
-            <button
+            <Link
               key={cat}
-              className="rounded-full border border-border px-4 py-2 text-sm font-light text-foreground transition-all hover:border-accent hover:bg-muted"
+              href={`/collections/${cat}`}
+              className="rounded-full border border-border px-4 py-2 text-sm font-light text-foreground transition-all hover:border-primary hover:bg-muted"
             >
               {cat}
-            </button>
+            </Link>
           ))}
         </div>
 

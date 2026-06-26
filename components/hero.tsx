@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 export function Hero() {
   return (
@@ -12,10 +13,21 @@ export function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8">
+          {/* Large Logo */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/vizzang-logo.png"
+              alt="Vizzang Scentique"
+              width={240}
+              height={240}
+              className="object-contain"
+            />
+          </div>
+
           {/* Fragrance Philosophy Tag */}
           <div className="inline-block">
             <p className="text-xs md:text-sm font-light tracking-widest text-primary uppercase mb-4">
-              ✦ Our Fragrance Philosophy ✦
+              Our Fragrance Philosophy
             </p>
           </div>
 
@@ -57,9 +69,9 @@ export function Hero() {
 
           {/* Trust Indicators */}
           <div className="pt-12 text-sm text-muted-foreground space-y-2">
-            <p className="font-light">✦ Sourced with intention, worn with confidence</p>
-            <p className="font-light">✦ For those who appreciate the art of subtlety</p>
-            <p className="font-light">✦ Beloved by creatives, professionals, and dreamers</p>
+            <p className="font-light">Sourced with intention, worn with confidence</p>
+            <p className="font-light">For those who appreciate the art of subtlety</p>
+            <p className="font-light">Beloved by creatives, professionals, and dreamers</p>
           </div>
         </div>
       </div>
