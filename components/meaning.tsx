@@ -42,7 +42,7 @@ export function Meaning() {
               <span className="text-primary">A Scent</span>
             </h2>
             <p className="text-base lg:text-lg text-gray-300 font-light leading-relaxed">
-              Vizzang was born from a simple belief: fragrance is an intimate conversation between 
+              Vizang Scentique was born from a simple belief: fragrance is an intimate conversation between 
               who you are and how the world experiences you. We craft scents for the authentic, the ambitious, 
               and those who refuse to be ordinary. Each fragrance tells a story of confidence, elegance, and self-expression.
             </p>
@@ -51,7 +51,7 @@ export function Meaning() {
           {/* Fragrance Philosophy Lifestyle Image */}
           <div className="relative h-96 lg:h-full lg:min-h-96">
             <Image
-              src="/lifestyle-man-vizzang-edited.png"
+              src="/lifestyle-man-vizang.png"
               alt="Man enjoying luxury fragrance"
               fill
               className="object-cover rounded-lg"

@@ -1,4 +1,5 @@
 import { Zap, MessageSquare, Sparkles } from 'lucide-react'
+import { BRAND } from '@/lib/brand'
 
 export function SmartAutomation() {
   const features = [
@@ -69,7 +70,7 @@ export function SmartAutomation() {
             Start your personalized scent journey today with our intelligent recommendation system
           </p>
           <a
-            href="https://wa.me/2349035113502?text=Hello Vizzang Scentique! I'd like to explore your fragrance collection"
+            href={`https://wa.me/${BRAND.whatsappNumber}?text=Hello ${BRAND.fullName}! I'd like to explore your fragrance collection`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded bg-foreground px-8 py-3 font-light text-background transition-opacity hover:opacity-80"

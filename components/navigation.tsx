@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
+import { BRAND } from '@/lib/brand'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,14 +30,14 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Image
               src="/vizzang-logo.png"
-              alt="Vizzang Scentique"
+              alt={BRAND.fullName}
               width={45}
               height={45}
               className="object-contain"
             />
             <div className="hidden sm:block">
               <div className="text-base font-bold tracking-widest text-foreground">
-                Vizzang <span className="text-primary">Scentique</span>
+                {BRAND.shortName} <span className="text-primary">Scentique</span>
               </div>
             </div>
           </Link>

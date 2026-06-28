@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import { BRAND } from '@/lib/brand'
 
 export function Hero() {
   return (
@@ -30,7 +31,7 @@ export function Hero() {
           <div className="flex lg:justify-start justify-center mb-8">
             <Image
               src="/vizzang-logo.png"
-              alt="Vizzang Scentique"
+              alt={BRAND.fullName}
               width={240}
               height={240}
               className="object-contain"

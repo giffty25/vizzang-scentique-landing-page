@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronRight } from 'lucide-react'
+import { BRAND } from '@/lib/brand'
 
 type Step = 'family' | 'wear' | 'intensity' | 'results'
 
@@ -200,7 +201,7 @@ export function ScentFinder() {
                   >
                     <span className="font-light text-foreground">{rec}</span>
                     <a
-                      href={`https://wa.me/2349035113502?text=I'm interested in ${rec} from Vizzang Scentique`}
+                      href={`https://wa.me/${BRAND.whatsappNumber}?text=I'm interested in ${rec} from ${BRAND.fullName}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-80"

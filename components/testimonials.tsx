@@ -7,7 +7,7 @@ export function Testimonials() {
     {
       name: 'Amina',
       location: 'Abuja',
-      quote: 'I usually avoid perfumes because many are too strong for me. The fragrance I got from Vizzang stayed on my clothes all day without becoming overwhelming.',
+      quote: 'I usually avoid perfumes because many are too strong for me. The fragrance I got from Vizang stayed on my clothes all day without becoming overwhelming.',
       rating: 5,
     },
     {
