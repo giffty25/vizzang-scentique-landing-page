@@ -129,7 +129,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 'perfume-7',
-    name: 'Vizang Signature Collection',
+    name: 'VIZZANG Signature Collection',
     category: 'Perfumes',
     description: 'Luxury limited edition fragrance in handcrafted premium packaging.',
     fragranceFamily: 'Luxury Blend',
@@ -897,10 +897,10 @@ export const allProducts: Product[] = [
   },
   {
   id: 'gift-7',
-  name: 'Vizang Royal Signature Box',
+  name: 'VIZZANG Royal Signature Box',
   category: 'Gift Collections',
-  description: 'Exclusive limited edition gift set with signature Vizang fragrances in handcrafted packaging.',
-  fragranceFamily: 'Vizang Signature',
+  description: 'Exclusive limited edition gift set with signature VIZZANG fragrances in handcrafted packaging.',
+  fragranceFamily: 'VIZZANG Signature',
     topNotes: 'Exclusive blend',
     heartNotes: 'Exclusive blend',
     baseNotes: 'Exclusive blend',

@@ -4,13 +4,13 @@
  */
 
 export const BRAND = {
-  fullName: 'Vizang Scentique',
-  shortName: 'Vizang',
+  fullName: 'VIZZANG SCENTIQUE',
+  shortName: 'VIZZANG',
   tagline: 'Gentle Touch of Lasting Freshness',
   description: 'Luxury fragrances crafted to reflect your individuality and leave lasting impressions.',
   whatsappNumber: '2349035113502',
-  email: 'vizangscentique@gmail.com',
-  instagram: '@vizang_scentique',
+  email: 'vizzangscentique@gmail.com',
+  instagram: '@vizzang_scentique',
   location: {
     city: 'Abuja',
     country: 'Nigeria',
