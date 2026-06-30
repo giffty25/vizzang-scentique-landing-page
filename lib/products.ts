@@ -326,7 +326,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '150ml',
     price: '₦24,000',
-    image: '/body-mist.png',
+    image: '/mist-vanilla-cloud-new.png',
     stock: true,
   },
   {
@@ -654,7 +654,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '120ml',
     price: '₦85,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-luxury-home-new.png',
     stock: true,
   },
 
