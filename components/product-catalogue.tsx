@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { allProducts, type Product } from '@/lib/products'
+import { BRAND } from '@/lib/brand'
 
 const categories = [
   'All',
@@ -13,21 +14,19 @@ const categories = [
   'Gift Collections',
 ]
 
-const WHATSAPP_NUMBER = '2349035113502'
-
 export function ProductCatalogue() {
   // Featured luxury fragrances for homepage (5 products)
   const featuredProducts = [
     allProducts.find(p => p.id === 'perfume-5'), // Imperial Oud Reserve ₦150,000
     allProducts.find(p => p.id === 'perfume-6'), // Noir Prestige Elixir ₦250,000
-    allProducts.find(p => p.id === 'perfume-7'), // Vizzang Signature Collection ₦500,000
+    allProducts.find(p => p.id === 'perfume-7'), // Vizang Signature Collection ₦500,000
     allProducts.find(p => p.id === 'perfume-3'), // Executive Signature ₦65,000
     allProducts.find(p => p.id === 'perfume-4'), // Velvet Bloom ₦82,000
   ].filter(Boolean) as Product[]
 
   const getWhatsAppLink = (product: Product) => {
-    const message = `Hello Vizzang Scentique. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    const message = `Hello ${BRAND.fullName}. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
+    return `https://wa.me/${BRAND.whatsappNumber}?text=${encodeURIComponent(message)}`
   }
 
   return (

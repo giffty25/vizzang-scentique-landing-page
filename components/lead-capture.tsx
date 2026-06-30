@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { BRAND } from '@/lib/brand'
 
 export function LeadCapture() {
   const [formData, setFormData] = useState({
@@ -19,8 +20,8 @@ export function LeadCapture() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const whatsappMessage = `Hello Vizzang Scentique! I would like personalized fragrance recommendations. Name: ${formData.name}, Email: ${formData.email}, Phone: ${formData.phone}, Preferred Scent: ${formData.scentFamily}`
-    window.open(`https://wa.me/2349035113502?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
+    const whatsappMessage = `Hello ${BRAND.fullName}! I would like personalized fragrance recommendations. Name: ${formData.name}, Email: ${formData.email}, Phone: ${formData.phone}, Preferred Scent: ${formData.scentFamily}`
+    window.open(`https://wa.me/${BRAND.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
     setFormData({ name: '', email: '', phone: '', scentFamily: '' })
   }
 

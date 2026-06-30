@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import { BRAND } from '@/lib/brand'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({
@@ -10,7 +11,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Vizzang Scentique | Luxury Fragrances That Resonate',
+  title: `${BRAND.fullName} | Luxury Fragrances That Resonate`,
   description: 'Discover elegant, long-lasting fragrances that express your individuality. Premium scents crafted for confidence, comfort, and lasting impressions.',
   generator: 'v0.app',
   icons: {

@@ -34,7 +34,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '50ml',
     price: '₦35,000',
-    image: '/perfume-1.png',
+    image: '/perfume-midnight-resonance.png',
     stock: true,
   },
   {
@@ -52,7 +52,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer, Autumn',
     size: '100ml',
     price: '₦48,000',
-    image: '/perfume-1.png',
+    image: '/perfume-golden-aura.png',
     stock: true,
   },
   {
@@ -70,7 +70,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '100ml',
     price: '₦65,000',
-    image: '/perfume-1.png',
+    image: '/perfume-executive-signature.png',
     stock: true,
   },
   {
@@ -88,7 +88,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '100ml',
     price: '₦82,000',
-    image: '/perfume-1.png',
+    image: '/perfume-velvet-bloom.png',
     stock: true,
   },
   {
@@ -106,7 +106,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '100ml',
     price: '₦150,000',
-    image: '/perfume-1.png',
+    image: '/perfume-imperial-oud.png',
     stock: true,
   },
   {
@@ -124,12 +124,12 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '100ml',
     price: '₦250,000',
-    image: '/perfume-1.png',
+    image: '/perfume-noir-prestige.png',
     stock: true,
   },
   {
     id: 'perfume-7',
-    name: 'Vizzang Signature Collection',
+    name: 'VIZZANG Signature Collection',
     category: 'Perfumes',
     description: 'Luxury limited edition fragrance in handcrafted premium packaging.',
     fragranceFamily: 'Luxury Blend',
@@ -142,7 +142,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '100ml',
     price: '₦500,000',
-    image: '/perfume-1.png',
+    image: '/perfume-vizzang-signature.png',
     stock: false,
   },
 
@@ -162,7 +162,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '30ml',
     price: '₦20,000',
-    image: '/perfume-oil.png',
+    image: '/oil-white-musk.png',
     stock: true,
   },
   {
@@ -180,7 +180,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '30ml',
     price: '₦25,000',
-    image: '/perfume-oil.png',
+    image: '/oil-royal-vanilla.png',
     stock: true,
   },
   {
@@ -198,7 +198,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '25ml',
     price: '₦35,000',
-    image: '/perfume-oil.png',
+    image: '/oil-golden-amber.png',
     stock: true,
   },
   {
@@ -216,7 +216,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '20ml',
     price: '₦60,000',
-    image: '/perfume-oil.png',
+    image: '/oil-soft-oud.png',
     stock: true,
   },
   {
@@ -234,7 +234,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '30ml',
     price: '₦28,000',
-    image: '/perfume-oil.png',
+    image: '/oil-velvet-rose.png',
     stock: true,
   },
   {
@@ -252,7 +252,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '25ml',
     price: '₦40,000',
-    image: '/perfume-oil.png',
+    image: '/oil-midnight-sandalwood.png',
     stock: true,
   },
   {
@@ -270,7 +270,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '20ml',
     price: '₦120,000',
-    image: '/perfume-oil.png',
+    image: '/oil-luxury-signature.png',
     stock: true,
   },
 
@@ -290,7 +290,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '150ml',
     price: '₦22,000',
-    image: '/body-mist.png',
+    image: '/mist-fresh-linen.png',
     stock: true,
   },
   {
@@ -344,7 +344,7 @@ export const allProducts: Product[] = [
     season: 'Summer',
     size: '150ml',
     price: '₦20,000',
-    image: '/body-mist.png',
+    image: '/mist-tropical-escape.png',
     stock: true,
   },
   {
@@ -362,7 +362,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '150ml',
     price: '₦21,000',
-    image: '/body-mist.png',
+    image: '/mist-ocean-breeze.png',
     stock: true,
   },
   {
@@ -380,7 +380,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '150ml',
     price: '₦22,000',
-    image: '/body-mist.png',
+    image: '/mist-golden-citrus.png',
     stock: true,
   },
   {
@@ -398,7 +398,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '150ml',
     price: '₦26,000',
-    image: '/body-mist.png',
+    image: '/mist-silk-blossom.png',
     stock: true,
   },
 
@@ -418,7 +418,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '200g',
     price: '₦32,000',
-    image: '/scented-candle.png',
+    image: '/candle-vanilla-comfort.png',
     stock: true,
   },
   {
@@ -436,7 +436,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '200g',
     price: '₦50,000',
-    image: '/scented-candle.png',
+    image: '/candle-midnight-oud.png',
     stock: true,
   },
   {
@@ -454,7 +454,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '200g',
     price: '₦28,000',
-    image: '/scented-candle.png',
+    image: '/candle-fresh-cotton.png',
     stock: true,
   },
   {
@@ -472,7 +472,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '200g',
     price: '₦48,000',
-    image: '/scented-candle.png',
+    image: '/candle-arabian-nights.png',
     stock: true,
   },
   {
@@ -490,7 +490,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '200g',
     price: '₦42,000',
-    image: '/scented-candle.png',
+    image: '/candle-golden-sandalwood.png',
     stock: true,
   },
   {
@@ -508,7 +508,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '200g',
     price: '₦30,000',
-    image: '/scented-candle.png',
+    image: '/candle-calm-lavender.png',
     stock: true,
   },
   {
@@ -526,7 +526,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '250g',
     price: '₦75,000',
-    image: '/scented-candle.png',
+    image: '/candle-luxury-spa.png',
     stock: true,
   },
 
@@ -546,7 +546,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '100ml',
     price: '₦28,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-soft-jasmine.png',
     stock: true,
   },
   {
@@ -564,7 +564,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '100ml',
     price: '₦25,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-warm-vanilla.png',
     stock: true,
   },
   {
@@ -600,7 +600,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '100ml',
     price: '₦27,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-white-tea.png',
     stock: true,
   },
   {
@@ -618,7 +618,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: '100ml',
     price: '₦60,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-royal-oud.png',
     stock: true,
   },
   {
@@ -636,7 +636,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: '100ml',
     price: '₦32,000',
-    image: '/reed-diffuser.png',
+    image: '/diffuser-lemongrass.png',
     stock: true,
   },
   {
@@ -674,7 +674,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Standard',
     price: '₦32,000',
-    image: '/car-fragrance.png',
+    image: '/car-executive-drive.png',
     stock: true,
   },
   {
@@ -692,7 +692,7 @@ export const allProducts: Product[] = [
     season: 'Autumn, Winter',
     size: 'Standard',
     price: '₦45,000',
-    image: '/car-fragrance.png',
+    image: '/car-midnight-leather.png',
     stock: true,
   },
   {
@@ -710,7 +710,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: 'Standard',
     price: '₦20,000',
-    image: '/car-fragrance.png',
+    image: '/car-fresh-escape.png',
     stock: true,
   },
   {
@@ -728,7 +728,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Premium',
     price: '₦65,000',
-    image: '/car-fragrance.png',
+    image: '/car-royal-oud-drive.png',
     stock: true,
   },
   {
@@ -746,7 +746,7 @@ export const allProducts: Product[] = [
     season: 'Spring, Summer',
     size: 'Standard',
     price: '₦28,000',
-    image: '/car-fragrance.png',
+    image: '/car-ocean-breeze.png',
     stock: true,
   },
   {
@@ -764,7 +764,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Standard',
     price: '₦30,000',
-    image: '/car-fragrance.png',
+    image: '/car-golden-citrus.png',
     stock: true,
   },
   {
@@ -782,7 +782,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Premium',
     price: '₦100,000',
-    image: '/car-fragrance.png',
+    image: '/car-luxury-auto.png',
     stock: true,
   },
 
@@ -802,7 +802,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '3 x 50ml',
     price: '₦120,000',
-    image: '/gift-collection.png',
+    image: '/gift-elegant-box.png',
     stock: true,
   },
   {
@@ -838,7 +838,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Complete set',
     price: '₦200,000',
-    image: '/gift-collection.png',
+    image: '/gift-executive-hamper.png',
     stock: true,
   },
   {
@@ -856,7 +856,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '2 x 100ml',
     price: '₦280,000',
-    image: '/gift-collection.png',
+    image: '/gift-wedding-collection.png',
     stock: true,
   },
   {
@@ -874,7 +874,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Complete set',
     price: '₦400,000',
-    image: '/gift-collection.png',
+    image: '/gift-vip-prestige.png',
     stock: true,
   },
   {
@@ -892,15 +892,15 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: 'Complete set',
     price: '₦320,000',
-    image: '/gift-collection.png',
+    image: '/gift-luxury-celebration.png',
     stock: true,
   },
   {
-    id: 'gift-7',
-    name: 'Vizzang Royal Signature Box',
-    category: 'Gift Collections',
-    description: 'Exclusive limited edition gift set with signature Vizzang fragrances in handcrafted packaging.',
-    fragranceFamily: 'Vizzang Signature',
+  id: 'gift-7',
+  name: 'VIZZANG Royal Signature Box',
+  category: 'Gift Collections',
+  description: 'Exclusive limited edition gift set with signature VIZZANG fragrances in handcrafted packaging.',
+  fragranceFamily: 'VIZZANG Signature',
     topNotes: 'Exclusive blend',
     heartNotes: 'Exclusive blend',
     baseNotes: 'Exclusive blend',
@@ -910,7 +910,7 @@ export const allProducts: Product[] = [
     season: 'Year-round',
     size: '3 x 50ml + Accessories',
     price: '₦500,000',
-    image: '/gift-collection.png',
+    image: '/gift-royal-signature.png',
     stock: false,
   },
 ]

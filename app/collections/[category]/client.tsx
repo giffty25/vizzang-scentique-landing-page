@@ -3,8 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { Product } from '@/lib/products'
-
-const WHATSAPP_NUMBER = '2349035113502'
+import { BRAND } from '@/lib/brand'
 
 interface ProductDetailsModalProps {
   product: Product
@@ -15,8 +14,8 @@ interface ProductDetailsModalProps {
 function ProductDetailsModal({ product, isOpen, onClose }: ProductDetailsModalProps) {
   if (!isOpen) return null
 
-  const whatsappMessage = `Hello Vizzang Scentique. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`
+  const whatsappMessage = `Hello ${BRAND.fullName}. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
+  const whatsappLink = `https://wa.me/${BRAND.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
@@ -139,8 +138,8 @@ export function CollectionClient({ products }: CollectionClientProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
 
   const getWhatsAppLink = (product: Product) => {
-    const message = `Hello Vizzang Scentique. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    const message = `Hello ${BRAND.fullName}. I'd like to order ${product.name} (${product.size}) for ${product.price}. Please tell me more about availability and delivery options.`
+    return `https://wa.me/${BRAND.whatsappNumber}?text=${encodeURIComponent(message)}`
   }
 
   return (

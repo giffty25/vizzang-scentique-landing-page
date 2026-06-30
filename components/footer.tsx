@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
+import { BRAND } from '@/lib/brand'
 
 export function Footer() {
   return (
@@ -9,11 +10,10 @@ export function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-light tracking-widest mb-6">
-              VIZZANG SCENTIQUE
+              {BRAND.fullName.toUpperCase()}
             </h3>
             <p className="text-sm font-light leading-relaxed opacity-90">
-              Luxury fragrances crafted to reflect your individuality and leave
-              lasting impressions.
+              {BRAND.description}
             </p>
             <p className="text-xs font-light opacity-70 tracking-wide mt-4">
               Express Your Essence
@@ -66,12 +66,12 @@ export function Footer() {
               <span className="text-sm font-light">09035113502</span>
             </a>
             <a
-              href="mailto:vizzangscentique@gmail.com"
+              href={`mailto:${BRAND.email}`}
               className="flex items-center gap-3 hover:text-[#D6B97A] transition-colors group"
             >
               <Mail className="w-5 h-5 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" strokeWidth={1.5} />
               <span className="text-sm font-light break-all">
-                vizzangscentique@gmail.com
+                {BRAND.email}
               </span>
             </a>
           </div>
@@ -86,19 +86,19 @@ export function Footer() {
                 FOLLOW US
               </p>
               <a
-                href="https://instagram.com/vizzang_scentique"
+                href={`https://instagram.com/${BRAND.instagram.replace('@', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-light hover:text-[#D6B97A] transition-colors inline-block"
               >
-                @vizzang_scentique
+                {BRAND.instagram}
               </a>
             </div>
 
             {/* Copyright */}
             <p className="text-xs font-light opacity-70 text-center md:text-right">
-              © 2026 Vizzang Scentique. All rights reserved. <br />
-              Abuja, Nigeria
+              © 2026 {BRAND.fullName}. All rights reserved. <br />
+              {BRAND.location.city}, {BRAND.location.country}
             </p>
           </div>
         </div>

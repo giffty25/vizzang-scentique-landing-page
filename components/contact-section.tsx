@@ -1,6 +1,7 @@
 'use client'
 
 import { Phone, Mail } from 'lucide-react'
+import { BRAND } from '@/lib/brand'
 
 export function ContactSection() {
   return (
@@ -8,7 +9,7 @@ export function ContactSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-accent font-light tracking-widest text-sm mb-4">GET IN TOUCH</p>
-          <h2 className="text-5xl md:text-6xl font-light text-foreground">Connect With<br/><span className="text-accent">Vizzang Scentique</span></h2>
+          <h2 className="text-5xl md:text-6xl font-light text-foreground">Connect With<br/><span className="text-accent">{BRAND.fullName}</span></h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -31,10 +32,10 @@ export function ContactSection() {
             </div>
             <h3 className="text-xl font-light text-foreground mb-3">Email</h3>
             <a
-              href="mailto:vizzangscentique@gmail.com"
+              href={`mailto:${BRAND.email}`}
               className="text-foreground font-light hover:text-accent transition-colors break-all text-lg"
             >
-              vizzangscentique@gmail.com
+              {BRAND.email}
             </a>
           </div>
 
@@ -46,12 +47,12 @@ export function ContactSection() {
             </div>
             <h3 className="text-xl font-light text-foreground mb-3">Instagram</h3>
             <a
-              href="https://instagram.com/vizzang_scentique"
+              href={`https://instagram.com/${BRAND.instagram.replace('@', '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground font-light hover:text-accent transition-colors text-lg"
             >
-              @vizzang_scentique
+              {BRAND.instagram}
             </a>
           </div>
         </div>
@@ -62,7 +63,7 @@ export function ContactSection() {
             For instant support and personalized recommendations, chat with us directly on WhatsApp. We respond quickly and provide dedicated customer service.
           </p>
           <a
-            href="https://wa.me/2349035113502?text=Hello Vizzang Scentique! I'd like to learn more about your fragrances."
+            href={`https://wa.me/${BRAND.whatsappNumber}?text=Hello ${BRAND.fullName}! I'd like to learn more about your fragrances.`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-foreground text-background px-8 py-3 font-light tracking-widest hover:opacity-80 transition-opacity"

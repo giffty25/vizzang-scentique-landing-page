@@ -1,5 +1,7 @@
 'use client'
 
+import { BRAND } from '@/lib/brand'
+
 export function FutureVision() {
   const expansions = [
     { title: 'Beauty', description: 'Skincare and cosmetics that complement your fragrance' },
@@ -13,9 +15,9 @@ export function FutureVision() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-accent font-light tracking-widest text-sm mb-4">LOOKING AHEAD</p>
-          <h2 className="text-5xl md:text-6xl font-light text-foreground">The Future of<br/><span className="text-accent">Vizzang</span></h2>
+          <h2 className="text-5xl md:text-6xl font-light text-foreground">The Future of<br/><span className="text-accent">{BRAND.shortName}</span></h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed mt-6">
-            Vizzang Scentique is the first expression of a broader lifestyle brand vision dedicated to helping you express your essence in every aspect of life.
+            {BRAND.fullName} is the first expression of a broader lifestyle brand vision dedicated to helping you express your essence in every aspect of life.
           </p>
         </div>
 
